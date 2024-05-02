@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    min-height: 500px;
+    width: 700px;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#task{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    font-size: x-large;
+    background-color: whitesmoke;
+}
+
+
+#tasklist{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+#tasklist li{
+    background-color: lavenderblush;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: x-large;
+    position: relative;
+}
+
+#tasklist li span{
+    position: absolute;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+}
+
+#tasklist li:hover{
+    background-color: #ffdadb;
+}
+
+#tasklist li span:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+@media(max-width:700px){
+    .box{
+        width: 98%;
+        padding: 5px;
+    }
+}
